@@ -3,7 +3,9 @@
 This Node.js and Express.js API allows users to manage their personal finances by recording income and expenses, retrieving past transactions, and generating summaries.
 
 **Technologies:**
+
 Backend Framework: Node.js with Express.js
+
 Database: SQLite
 
 **Database Setup (SQLite):**
@@ -11,6 +13,7 @@ Database: SQLite
 Create a SQLite database file (finance.db).
 Use a database management tool like SQLite Studio or the command line to create the following tables:
 SQL
+
 CREATE TABLE transactions (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 type TEXT NOT NULL,
@@ -29,10 +32,12 @@ type TEXT NOT NULL
 **Installation:**
 
 Install dependencies: npm install express sqlit sqlite3 moment
-Running the API
-Start the server: node index.js
+
+Start the server: node index.js (Optional: nodemon index.js)
+
 The API will be running on port 3000 by default (you can modify this in index.js).
-API Endpoints
+
+**API Endpoints**
 
 **1. POST /transaction**
 
